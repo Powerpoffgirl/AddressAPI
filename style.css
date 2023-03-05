@@ -5,9 +5,10 @@
     flex-direction: column;
 }
 
-/* #countryInfo{
-    visibility: hidden;
-} */
+#countryInfo{
+    /* visibility: hidden; */
+    display: none;
+}
 
 #table{
     background-color:rgb(250, 242, 230)

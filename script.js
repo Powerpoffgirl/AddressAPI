@@ -20,6 +20,7 @@ function showData() {
     row.innerHTML = `
         <td>${data.active}</td>
         <td>${data.country}</td>
+        <td><button type="button" id="showMore" onclick="showMoreInfo()">+</button></td>
         <td id="countryInfo">${
           "Id: " +
           data.countryInfo._id +
@@ -30,14 +31,15 @@ function showData() {
           " flag: " +
           data.countryInfo.flag
         }</td>
-        <td><button type="button" id="showMore" onclick="showMoreInfo()">+</button></td>
     `;
     tbody.append(row);
   });
 }
 
 function showMoreInfo() {
-  //   let sb = document.getElementById("countryInfo")?.style.display = "block";
-  //   countryInfo.style.visibility = "visible";
+  // storeData.map((data) => {
+  var x = document.getElementById("countryInfo");
+  x.style.display = "block";
   console.log("show More");
+  // });
 }
